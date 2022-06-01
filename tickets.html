@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="script.js"></script>
+  </head>
+<body>
+    <header>
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                  <h2>Conf Bs As</h2>
+                </a>
+      
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                  <li>
+                    <a href="#" class="nav-link text-white">La conferencia</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-secondary">Los oradores</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-secondary">El lugar y la fecha</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-secondary">Conviertete en orador</a>
+                  </li>
+                   <li>
+                    <a href="#" class="nav-link text-success">Comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+    
+    <div class="container" style="margin-top: 10px;">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3 bg-info">
+    <div class="card-body bg-white">
+      <h3 class="card-title">Estudiante</h3>
+      <p class="card-text">Tienen un descuento</p>
+      <h3 class="card-title">80%</h3>
+      <p class="card-text text-muted">*Presentando documentacion</p>
+     </div>
+  </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 bg-success" >
+              <div class="card-body bg-white">
+                <h3 class="card-title">Trainee</h3>
+                <p class="card-text">Tienen un descuento</p>
+                <h3 class="card-title">50%</h3>
+                <p class="card-text text-muted">*Presentando documentacion</p>
+              </div>
+            </div>
+        </div>
+        <div class="col" >
+          <div class="card mb-3 bg-warning" >
+              <div class="card-body bg-white">
+                <h3 class="card-title">Junior</h3>
+                <p class="card-text">Tienen un descuento</p>
+                <h3 class="card-title">15%</h3>
+                <p class="card-text text-muted">*Presentando documentacion</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+      <div style="text-align: center; margin-top: 50px; max-width: 1900px;">
+        <h6 class="text-muted">VENTA</h6>
+        <h2>VALOR DE TICKET $200</h2>
+      </div>
+      <form class="container" style="margin-top: 15px;">
+        <div class="row" >
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required id="name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required id="surname">
+          </div>
+          
+        </div>
+        <div class="col" style="margin-top: 15px;">
+          <input type="email" class="form-control" placeholder="Correo" aria-label="Correo" required id="email">
+        </div>
+        <div class="row" style="margin-top: 15px;">
+          <div class="col">
+            <h4>Cantidad</h4>
+          </div>
+          <div class="col">
+            <h4>Categoria</h4>
+          </div>
+          
+        </div>
+        <div class="row" style="margin-top: 15px;">
+          <div class="col">
+            <input type="number" class="form-control" placeholder="cantidad" aria-label="cantidad" required id="quantity">
+          </div>
+          <div class="col">
+            <select class="form-select" aria-label="Default select example" required id="categoria">
+              <option selected>Categoria</option>
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+              <option value="4">Particular</option>
+            </select>
+          </div>
+          
+        </div>
+
+        <div class="col total">
+          <div class="d-grid gap-2">
+            <p id="idtotal">Total a pagar:$</p>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 15px;">
+          <div class="col">
+            <div class="d-grid gap-2">
+              <button class="btn btn-success" type="button" style="background-color: #76bf36;" onClick="document.location.reload(true)">Borrar</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2">
+              <button class="btn btn-success" type="submit" style="background-color: #76bf36;" onclick="total();">Resumen</button>
+            </div>
+          </div>
+          
+        </div>
+        
+      </form>
+</body>
+<footer class=" text-center text-white" >
+  <div class="container p-4">
+    <section class="">
+      <div class="row">
+        <div class="col list-unstyled">
+          <a href="#!" class="text-white text-decoration-none">Preguntas frecuentes</a>
+        </div>
+        <div class="col">
+          <a href="#!" class="text-white text-decoration-none">Contáctanos</a>
+        </div>
+        <div class="col">
+          <a href="#!" class="text-white text-decoration-none">Prensa</a>
+        </div>
+        <div class="col">
+          <a href="#!" class="text-white text-decoration-none">Conferencias</a>
+        </div>
+        <div class="col">
+          <a href="#!" class="text-white text-decoration-none">Términos y condiciones</a>
+        </div>
+        <div class="col">
+          <a href="#!" class="text-white text-decoration-none">Privacidad</a>
+        </div>
+        <div class="col">
+          <a href="#!" class="text-white text-decoration-none">Estudiantes</a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</footer>
+</html>
+

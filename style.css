@@ -1,0 +1,38 @@
+.container-fluid {
+    position: relative;
+    text-align: center;
+    color: white;
+    width:2000px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+section img {
+    width: 200px; /* You can set the dimensions to whatever you want */
+    height: 400px;
+    object-fit: contain;
+}
+#boton1 {
+  --bs-green: #92e625;
+}
+footer{
+  background-color:#3d44a9;
+  margin-top: 25px;
+}
+.total{
+  margin-top: 15px; background-color:  #40CFFF; height: 60px;
+}
+.total p{
+  color: #27548f;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.card-body{
+  text-align: center; margin: 2px; line-height: 4
+}
+.text-succes{
+  color: #92e625;
+}
